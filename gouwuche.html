@@ -1,0 +1,553 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>购物车</title>
+
+    <!-- Bootstrap -->
+    <link href="./public/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./public/js/jquery-1.12.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./public/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./public/gouwuche.css">
+
+</head>
+<body>
+		<!-- 导航 -->
+	<nav class="navbar navbar-inverse  navbar-fixed-top " style="background: #0A0A0A">
+		<div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+					<img class="tubiao" src="./public/img/tubiao.png">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-left ">
+		        
+		        <li class="dropdown zxsc">
+	                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">在线商城 <span class="caret"></span></a>
+	                 <ul class="dropdown-menu">
+	                   <li><a href="#">坚果 Pro</a></li>
+	                   <li><a href="#">Smartian M1/M1L</a></li>
+	                   <li><a href="#">Smartisan OS</a></li>
+	                   <li><a href="#">欢喜云</a></li>
+	                 </ul>
+		        </li>
+		       <!--  <p class="navbar-text">在线商城</p>
+			      <p class="navbar-text">坚果 Pro</p>
+			      <p class="navbar-text">Smartian M1/M1L</p>
+			      <p class="navbar-text">Smartisan OS</p>
+			      <p class="navbar-text">欢喜云</p> -->
+			     
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right daozi" >
+		      	  <li class="active"><a href="#" style="color:#9D9D9D">应用下载</a></li>
+		      	  <li class="active"><a href="#" style="color:#9D9D9D">官方论坛</a></li>
+		      	  <li class="active hangss">
+					<p class="navbar-text"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></p>
+					<img src="./public/img/gouwuche.png" alt="" style="margin-top: 9px">
+		      	  </li>
+		      	  <li>
+			      		
+			      </li>
+			      <li>
+						
+			      </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	<!-- end 导航 -->
+	</nav>
+
+	<!-- 主体开始 -->
+	<div class="container">
+		<div class="row">
+			<div class="panel panel-default">
+			    <div class="panel-heading gouwu">
+			    	<h3>购物清单</h3>
+			    </div>
+			    <!-- 购物内容 -->
+			  	<div class="panel-body">
+					<div class="col-xs-12">
+						<!-- 商品信息行 -->
+						<div class="row xinxi">
+							<div class="col-md-7 col-xs-4">商品信息</div>
+							<div class="col-md-1 col-xs-2" style="text-align: center">单价</div>
+							<div class="col-md-2 col-xs-2" style="text-align: center">数量</div>
+							<div class="col-md-1 col-xs-2" style="text-align: center">小计</div>
+							<div class="col-md-1 col-xs-2" style="text-align: center">操作</div>
+						</div>
+					<!--  展示1-->
+						<div class="row zhanshi1">
+							<div class="col-md-7 col-xs-12 tupian" >
+								<div class="quan " id="a1"></div>
+								<img src="./public/img/gwc/10.png" alt="..." class="img-thumbnail" width="81px">
+								<div class=" jieshao">
+									<h3>Micro-USB 至 Type-C  转接头</h3>
+									<h6>白色</h6>
+								</div>
+							</div>
+							<!-- 价格 -->
+							<div class="col-md-1 col-xs-2 jiage" >
+								¥29.00
+							</div>
+							<!-- 加减 -->
+							<div class="col-md-2 col-xs-6 jiajian f1">
+								<div class="jian f1"></div>
+								<div class="yi1">1</div>
+								<div class="jia f1"></div>
+							</div>
+							<!-- 小计 -->
+							<div class="col-md-1 col-xs-2 jiage xiaoji">
+								¥29.00
+							</div>
+
+							<!-- 操作 -->
+							<div class="col-md-1 col-xs-2  caozuo ">
+								<div class="caozuotu"></div>
+							</div>
+					<!-- 展示1结束 -->
+						</div>
+
+						<!--  展示2-->
+						<div class="row zhanshi1">
+							<div class="col-md-7 col-xs-12 tupian" >
+								<div class="quan" id="a2"></div>
+								<img src="./public/img/gwc/10.jpg" alt="..." class="img-thumbnail" width="81px">
+								<div class=" jieshao">
+									<h3>Smartisan Type-C 数据线</h3>
+									<h6>白色</h6>
+								</div>
+							</div>
+							<!-- 价格 -->
+							<div class="col-md-1 col-xs-2 jiage" >
+								¥39.00
+							</div>
+							<!-- 加减 -->
+							<div class="col-md-2 col-xs-6 jiajian f2">
+								<div class="jian f2"></div>
+								<div class="yi1">1</div>
+								<div class="jia f2"></div>
+							</div>
+							<!-- 小计 -->
+							<div class="col-md-1 col-xs-2 jiage xiaoji">
+								¥39.00
+							</div>
+
+							<!-- 操作 -->
+							<div class="col-md-1 col-xs-2 caozuo ">
+								<div class="caozuotu"></div>
+							</div>
+					<!-- 展示2结束 -->
+						</div>
+
+						<!--  展示3-->
+						<div class="row zhanshi1">
+							<div class="col-md-7 col-xs-12 tupian" >
+								<div class="quan" id="a3"></div>
+								<img src="./public/img/gwc/11.jpg" alt="..." class="img-thumbnail" width="81px">
+								<div class=" jieshao">
+									<h3>Smartisan 原装快充充电器</h3>
+									<h6>白色</h6>
+								</div>
+							</div>
+							<!-- 价格 -->
+							<div class="col-md-1 col-xs-2 jiage" >
+								¥59.00
+							</div>
+							<!-- 加减 -->
+							<div class="col-md-2 col-xs-6 jiajian f3">
+								<div class="jian f3"></div>
+								<div class="yi1">1</div>
+								<div class="jia f3"></div>
+							</div>
+							<!-- 小计 -->
+							<div class="col-md-1 col-xs-2 jiage xiaoji">
+								¥59.00
+							</div>
+
+							<!-- 操作 -->
+							<div class="col-md-1 col-xs-2 caozuo ">
+								<div class="caozuotu"></div>
+							</div>
+					<!-- 展示3结束 -->
+						</div>
+
+						<!--  展示4-->
+						<div class="row zhanshi1">
+							<div class="col-md-7 col-xs-12 tupian" >
+								<div class="quan" id="a4"></div>
+								<img src="./public/img/gwc/12.jpg" alt="..." class="img-thumbnail" width="81px">
+								<div class=" jieshao">
+									<h3>Smartisan 耳机转接头</h3>
+									<h6>白色</h6>
+								</div>
+							</div>
+							<!-- 价格 -->
+							<div class="col-md-1 col-xs-2 jiage" >
+								¥19.00
+							</div>
+							<!-- 加减 -->
+							<div class="col-md-2 col-xs-6 jiajian f4">
+								<div class="jian f4"></div>
+								<div class="yi1">1</div>
+								<div class="jia f4"></div>
+							</div>
+							<!-- 小计 -->
+							<div class="col-md-1 col-xs-2 jiage xiaoji">
+								¥19.00
+							</div>
+
+							<!-- 操作 -->
+							<div class="col-md-1 col-xs-2 caozuo ">
+								<div class="caozuotu"></div>
+							</div>
+					<!-- 展示4结束 -->
+						</div>
+					</div>
+			  	</div>
+			  	<!-- 结算尾部 -->
+			  	<div class="panel-footer">
+					<div class="row ">
+						<div class="col-md-6 col-xs-12 col-sm-5 quanx " >
+							<div class="quan quans"></div>
+							<span class="xuan">全选</span>
+							<span class="gang">|</span>
+							<div class="quan fans"></div>
+							<span class="xuan">反选</span>
+							<span class="shan">删除选中的商品</span>
+						</div>
+						<div class="col-md-2 col-xs-6 col-sm-3 zg">
+							<h4>已选择<span>4</span>件产品</h4>
+							<h5>共计<span>4</span>件产品</h5>
+						</div>
+						<div class="col-md-2 col-xs-6  col-sm-3 jine">
+							<h4>应付金额:<span>146.00</span></h4>
+							<h5>应付总额不含运费</h5>
+						</div>
+						<div class="col-md-1 col-xs-12 col-sm-12 jiesuan" >
+							<button type="button" class="btn btn-primary btn-lg">现在结算</button>
+						</div>
+					</div>
+				<!-- end结算尾部 -->
+			  	</div>
+				
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<hr>
+	<!-- 尾部 -->
+	<footer class="footer ">
+	    <div class="container-fluid" style="background: #FAFAFA">
+	       <div class="row">
+			<div class="col-xs-10 col-xs-offset-1" style="margin-top:40px;">
+				    <div class="row footer-top">
+				      <div class="col-xs-12 col-sm-9 col-md-9 col-md-offset-0">
+				        <div class="weizi row about ">
+				          <div class="col-xs-4 col-sm-3 col-md-2" >
+				            <h3>订单服务</h3>
+				            <ul class="list-unstyled">
+				              <li><a href="/about/">购买指南</a></li>
+				              <li><a href="/ad/">支付方式</a></li>
+				              <li><a href="/links/">送货政策</a></li>
+				            </ul>
+				          </div>
+				          <div class="col-xs-4 col-sm-3 col-md-2">
+				            <h3>服务支持</h3>
+				            <ul class="list-unstyled">
+				              <li><a href="#" target="_blank">维修门店</a></li>
+				              <li><a href="#">零售门店</a></li>
+				            </ul>
+				          </div>
+				          <div class="col-xs-4 col-sm-3 col-md-2">
+				            <h3>自助服务</h3>
+				            <ul class="list-unstyled">
+				              <li><a href="#" target="_blank">热点咨询</a></li>
+				              <li><a href="" target="_blank">预约购买</a></li>
+				              <li><a href="" target="_blank">订单物流</a></li>
+				            </ul>
+				          </div>
+				          <div class="col-xs-4 col-sm-3 col-md-2">
+				            <h3>媒体中心</h3>
+				            <ul class="list-unstyled">
+				              <li><a href="" target="_blank">新闻动态</a></li>
+				              <li><a href="" target="_blank">官方视频</a></li>
+				              <li><a href="" target="_blank">图片资源</a></li>
+				            </ul>
+				          </div>
+				          <div class="col-xs-4 col-sm-3 col-md-2">
+				            <h3>关于公司</h3>
+				            <ul class="list-unstyled">
+				              <li><a href="" target="_blank">公司简介</a></li>
+				              <li><a href="" target="_blank">加入我们</a></li>
+				              <li><a href="" target="_blank">联系我们</a></li>
+				            </ul>
+				          </div>
+				          <div class="col-xs-4 col-sm-3 col-md-2">
+				            <h3>关注我们</h3>
+				            <ul class="list-unstyled">
+				              <li><a href="" target="_blank">新浪微博</a></li>
+				              <li><a href="" target="_blank">官方微信</a></li>
+				              <li><a href="" target="_blank">贴吧论坛</a></li>
+				            </ul>
+				          </div>
+				        </div>
+				      </div>
+				      <div class="col-xs-8 col-sm-3 col-md-3 col-md-offset-0">
+				      	<div class="row">
+				      		<div class="col-xs-12 col-md-10">
+								<ul class="list-unstyled">
+							        <li><a href="" target="_blank" class="dianhua">400-619-0909</a></li>
+							        <li><a href="" class="shijian">周一至周日 9:00-18:00 (仅售市话费)</a></li>
+							        <li>
+										<button type="button" class="zxbz btn btn-default ">在线帮助</button>
+							        </li>
+					       	 	</ul>	
+				      		</div>
+							
+					  	</div>
+				      	
+				      </div>
+				    </div>
+
+				    <hr>
+				    <div class="row footer-bottom">
+				    	<div class="col-md-10">
+					      <ul class="list-inline ">
+						    <li>
+						         <a href="#" target="_blank" class="copy">Copyright © 2017, Smartisan Digital Co., Ltd. All Rights Reserved.北京锤子数码科技有限公司
+						          </a>
+					        </li>
+					        <li class="dibu">
+					        	<a href="">法律声明</a>
+					        </li>
+					        <li class="dibu">
+					        	<a href="">隐私条款</a>
+					        </li>
+					        <li class="dibu">
+					        	<a href="">开发者中心</a>
+					        </li>
+					     </ul>
+					     <li class="xia"> 京ICP备14041720号-1&nbsp;京ICP证140622号 &nbsp;京公网安备11010502025474 </li>
+		    			</div>
+				      	    			<div class="col-md-2">
+				      						<div class="dropup">
+				      						  <button class="btn btn-default dropdown-toggle " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				      						   	<div class="guoqi"></div>
+				      						   	<div class="ying">&nbsp;&nbsp;中文&nbsp;&nbsp;</div>
+				      						    <span class="caret"></span>
+				      						  </button>
+				      						  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+				      						    <li>
+				      						    	<div class="meiguo"></div>
+				      									<div class="zw">&nbsp;&nbsp;English&nbsp;&nbsp;</div>
+				      						    </li>
+				      						  </ul>
+				      						</div>
+				      	    			</div>
+				    </div>
+				  </div>
+			</div>
+	    </div>
+	</footer>      
+	
+	<!-- 返回顶部 -->
+	<div class="fding">
+		<a href="">
+			<img src="./public/img/ding.png" alt="">
+		</a>
+	</div>
+
+
+
+	<script>
+	// 是否添加对勾
+		$('.quan').click(function(){
+			var a =$(this).css('background-position-y');
+			if (a=='-18px'){
+				$(this).css({background:'url('+'./public/img/dl/5.png'+') 0px 2px '})
+				aa=true;
+			}else if(a=='2px'){
+				$(this).css({background:'url('+'./public/img/dl/5.png'+') 0px -18px '})
+			}
+			
+		})
+	//全选
+	var cc=false;
+	$('.quanx .quans').click(function(){
+		if (cc==false) {
+			$('.quan').css({background:'url('+'./public/img/dl/5.png'+') 0px 2px'})
+			$('.fans').css({background:'url('+'./public/img/dl/5.png'+') 0px -18px'})
+			cc=true;
+		}else if(cc==true){
+			$('.quan').css({background:'url('+'./public/img/dl/5.png'+') 0px -18px'})
+			cc=false;
+		}
+		
+	})
+	//反选
+	var fanxuan=false;
+	$('.fans').click(function(){
+		if (fanxuan==false) {
+			for (var i = 1; i <=4; i++) {
+				//获取每个按钮的y值
+				var a =$('#'+'a'+i).css('background-position-y');
+				console.log(a);
+				if (a=='-18px'){
+					$('#'+'a'+i).css({background:'url('+'./public/img/dl/5.png'+') 0px 2px '})
+					aa=true;
+				}else if(a=='2px'){
+					$('#'+'a'+i).css({background:'url('+'./public/img/dl/5.png'+') 0px -18px '})
+				}
+			}
+			fanxuan=true;
+		}else if(fanxuan==true){
+			$('.fans').css({background:'url('+'./public/img/dl/5.png'+') 0px -18px'})
+			fanxuan=false;
+
+		}
+	})
+
+	// 加减
+	//jia点击事件
+	$('.jia').click(function(){
+		// 获取class值
+		var fzhi=$(this).attr('class');
+		var reg=/f\d/;
+		//找出是f几
+		var newf=reg.exec(fzhi);
+		console.log(newf);
+		//获取值并加1
+		var shu=Number($(this).parent('.'+newf).find('.yi1').text());
+		var newshu=shu+1;
+		$(this).parent('.'+newf).find('.yi1').html(newshu);
+
+		//获取当前价格
+		var dqjinbi=$(this).parents('.zhanshi1').find('.jiage').text();
+		var reg=/\d+/;
+		var dqjb=Number(reg.exec(dqjinbi));
+		//获取总和价格
+		var zgjinbi=$('.jine').find('h4 span').text();
+		var regs=/\d+/;
+		var zgjb= Number(regs.exec(zgjinbi));
+		console.log(dqjb);
+		console.log(typeof(dqjb));
+		//算出新的总价格
+		var newzong=dqjb+zgjb;
+		$('.jine').find('h4 span').html(newzong+'.00');
+		//商品个数
+		var gs=Number($('.zg h5 span').text());
+		var newgeshu=gs+1;
+		$('.zg h4 span').html(newgeshu);
+		$('.zg h5 span').html(newgeshu);
+		// 小计
+		var xiao=$(this).parents('.zhanshi1').find('.xiaoji').text();
+		var rega=/\d+/;
+		var xiaojishu=Number(rega.exec(xiao));
+		console.log(xiaojishu);
+		var xinxiaoji=xiaojishu+dqjb;
+		$(this).parents('.zhanshi1').find('.xiaoji').html('¥'+xinxiaoji+'.00');
+
+
+
+	})	
+	//jian点击事件
+	$('.jian').click(function(){
+		// 获取class值
+		var fzhi=$(this).attr('class');
+		var reg=/f\d/;
+		//找出是f几
+		var newf=reg.exec(fzhi);
+		console.log(newf);
+		//获取值并减1
+		var shu=Number($(this).parent('.'+newf).find('.yi1').text());
+		if (shu<=1) {shu=1};
+		if(shu>1){var newshu=shu-1};
+		$(this).parent('.'+newf).find('.yi1').html(newshu);
+		if (shu>1) {
+			//获取当前价格
+		var dqjinbi=$(this).parents('.zhanshi1').find('.jiage').text();
+		var reg=/\d+/;
+		var dqjb=Number(reg.exec(dqjinbi));
+		//获取总和价格
+		var zgjinbi=$('.jine').find('h4 span').text();
+		var regs=/\d+/;
+		var zgjb= Number(regs.exec(zgjinbi));
+		console.log(dqjb);
+		console.log(typeof(dqjb));
+		//算出新的总价格
+		if (shu>0) {
+			var newzong=zgjb-dqjb;
+		}
+		$('.jine').find('h4 span').html(newzong+'.00');
+		//商品个数
+		var gs=Number($('.zg h5 span').text());
+			var newgeshu=gs-1;
+		//赋值给总个数
+		$('.zg h4 span').html(newgeshu);
+		$('.zg h5 span').html(newgeshu)
+		// 小计
+		var xiao=$(this).parents('.zhanshi1').find('.xiaoji').text();
+		var rega=/\d+/;
+		var xiaojishu=Number(rega.exec(xiao));
+		console.log(xiaojishu);
+		var xinxiaoji=xiaojishu-dqjb;
+		$(this).parents('.zhanshi1').find('.xiaoji').html('¥'+xinxiaoji+'.00');
+
+
+		}
+		
+
+
+	})
+
+	//叉号删除
+	$('.caozuotu').click(function(){
+		//获取商品个数
+		var geshu=Number($(this).parents('.zhanshi1').find('.yi1').text());
+		//获取商品价格
+		var dqjinbi=$(this).parents('.zhanshi1').find('.jiage').text();
+		var reg=/\d+/;
+		var dqjb=Number(reg.exec(dqjinbi));
+		//获取总共价格
+		var zgjinbi=$('.jine').find('h4 span').text();
+		var regs=/\d+/;
+		var zgjb=Number(regs.exec(zgjinbi));
+		//求出新的价格
+		var newjinbi=zgjb-dqjb*geshu;
+		//赋值
+		$('.jine').find('h4 span').html(newjinbi+'.00');
+		//求出商品个数
+		var gs=Number($('.zg h5 span').text());
+		var newgs=gs-geshu;
+		$('.zg h4 span').html(newgs);
+		$('.zg h5 span').html(newgs);
+		$(this).parents('.zhanshi1').remove();
+	})
+
+
+
+	// 返回顶部
+	$('.fding').click(function(){
+		$('body').animate({scrollTop:0+'px'},1500);
+	})
+
+	</script>
+	
+	
+</body>
+</html>
