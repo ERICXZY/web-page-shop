@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>商品列表</title>
+
+    <!-- Bootstrap -->
+    <link href="./public/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./public/js/jquery-1.12.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./public/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./public/sp.css">
+
+</head>
+<body>
+			<!-- 导航 -->
+	<nav class="navbar navbar-inverse  navbar-fixed-top " style="background: #0A0A0A">
+		<div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+					<img class="tubiao" src="./public/img/tubiao.png">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-left ">
+		        
+		        <li class="dropdown zxsc">
+	                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">在线商城 <span class="caret"></span></a>
+	                 <ul class="dropdown-menu">
+	                   <li><a href="#">坚果 Pro</a></li>
+	                   <li><a href="#">Smartian M1/M1L</a></li>
+	                   <li><a href="#">Smartisan OS</a></li>
+	                   <li><a href="#">欢喜云</a></li>
+	                 </ul>
+		        </li>
+		       <!--  <p class="navbar-text">在线商城</p>
+			      <p class="navbar-text">坚果 Pro</p>
+			      <p class="navbar-text">Smartian M1/M1L</p>
+			      <p class="navbar-text">Smartisan OS</p>
+			      <p class="navbar-text">欢喜云</p> -->
+			     
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right daozi" >
+		      	  <li class="active"><a href="#" style="color:#9D9D9D">应用下载</a></li>
+		      	  <li class="active"><a href="#" style="color:#9D9D9D">官方论坛</a></li>
+		      	  <li class="active hangss">
+					<p class="navbar-text"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></p>
+					<img src="./public/img/gouwuche.png" alt="" style="margin-top: 9px">
+		      	  </li>
+		      	  <li>
+			      		
+			      </li>
+			      <li>
+						
+			      </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	<!-- end 导航 -->
+	</nav>
+	<!-- <div class="cart clearfix"></div> -->
+	</nav>
+	<!-- 主体开始 -->
+	<div class="container-fluid">
+		<!-- 标题 -->
+		<div class="row ">
+			<div class="col-xs-10  col-xs-offset-1 biaoti">
+				<div class="row biao">
+					<div class="col-xs-2 col-md-1" ><a href="#" style="font-weight:bold">首页 </a></div>
+					<div class="col-xs-2 col-md-1"><a href="#">手机</a></div>
+					<div class="col-xs-3 col-md-1"><a href="#">官方配件</a></div>
+					<div class="col-xs-5 col-md-2"><a href="#">"足迹系列"手感膜</a></div>
+					<div class="col-xs-3 col-md-1"><a href="#">周边产品</a></div>
+					<div class="col-xs-3 col-md-1"><a href="#">第三方配件</a></div>
+					<div class="col-xs-3 col-md-1"><a href="#">全部商品</a></div>
+					<div class="col-xs-3 col-md-1"><a href="#">服务</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row ">
+			<div class="col-xs-9  col-xs-offset-1 biaoti_2">
+				<div class="row biao">
+					<div class="col-xs-3 col-sm-2 col-md-1"><a href="#">综合排序</a></div>
+					<div class="col-xs-1 col-sm-2 col-md-1 spans">·</div>
+					<div class="col-xs-3 col-sm-2 col-md-1"><a href="#">销量排序</a></div>
+					<div class="col-xs-1 col-sm-2 col-md-1 spans">·</div>
+					<div class="col-xs-3 col-sm-2 col-md-1"><a href="#">价格低到高</a></div>
+					<div class="col-xs-1 col-sm-2 col-md-1 spans">·</div>
+					<div class="col-xs-3 col-sm-2 col-md-1"><a href="#">价格高到低</a></div>
+				</div>
+			</div>
+		<!-- 标题结束 -->
+		</div>
+
+		<!-- 内容 -->
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<div class="row">
+					<div class="col-xs-12 nr">
+						<div class="panel panel-default">
+						  <div class="panel-body" style="padding: 0px;">
+						  		<div class="ng row">
+						  		   <div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/1.jpg" alt="">
+						  			    <div class="caption">
+						  			      <h3>Smartisan 原装快充充电器</h3>
+						  			      <p>18W 安全快充、MTK PE+2.0快充 18W</p>
+						  			      <p class="nbia">¥59.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/2.jpg" alt="">
+						  			    <div class="caption">
+						  			      <h3>Smartisan Type-C数据线</h3>
+						  			      <p>PTC 过温保护、凹形设计、TPE 环保材质</p>
+						  			      <p class="nbia">¥39.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/4.png" alt="">
+						  			    <div class="caption">
+						  			      <h3>Micro-USB至Type-C转接头</h3>
+						  			      <p>即插即用、全面兼容快捷方便、轻巧便捷</p>
+						  			      <p class="nbia">¥29.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/3.png" alt="">
+						  			    <div class="caption">
+						  			      <h3>Smartisan 二合一数据线</h3>
+						  			      <p>Type-C  Micro-USB 双接口、夜间微光灯</p>
+						  			      <p class="nbia">¥39.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/5.jpg" alt="">
+						  			    <div class="caption">
+						  			      <h3>Smartisan 耳机转接头</h3>
+						  			      <p>即插即用、全面兼容</p>
+						  			      <p class="nbia">¥19.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/6.jpg" alt="">
+						  			    <div class="caption">
+						  			      <h3>Smartisan 快充移动电源</h3>
+						  			      <p>10000mAh 双向快充、高标准安全</p>
+						  			      <p class="nbia">¥199.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/7.jpg" alt="">
+						  			    <div class="caption">
+						  			      <h3>双口快充车载充电器球</h3>
+						  			      <p>铝合金机身、双口快充、智能调节</p>
+						  			      <p class="nbia">¥99.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/8.jpg" alt="">
+						  			    <div class="caption">
+						  			      <h3>S-100半入耳式线控耳机</h3>
+						  			      <p>14.2mm 发音单元、三按键式线控</p>
+						  			      <p class="nbia">¥99.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang"  style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/9.jpg" alt="">
+						  			    <div class="caption">
+						  			      <h3>《日本制造，索尼设计》</h3>
+						  			      <p>盛田昭夫的日式经营学</p>
+						  			      <p class="nbia">¥58.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/10.jpg" alt="">
+						  			    <div class="caption">
+						  			      <h3>《索尼设计，塑造现代》</h3>
+						  			      <p>索尼全盛时期工业设计作品</p>
+						  			      <p class="nbia">¥259.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/11.jpg" alt="">
+						  			    <div class="caption">
+						  			      <h3>极米无屏电视 CC</h3>
+						  			      <p>720P 高清分辨率、两万毫安续航力</p>
+						  			      <p class="nbia">¥2699.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/12.jpg" alt="">
+						  			    <div class="caption">
+						  			      <h3>极米无屏电视 H1S</h3>
+						  			      <p>哈曼卡顿音响、左右梯形校正</p>
+						  			      <p class="nbia">¥4799.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/13.jpg" alt="">
+						  			    <div class="caption">
+						  			      <h3>FIIL CARAT 蓝牙运动耳机</h3>
+						  			      <p>智能计步佩戴舒适</p>
+						  			      <p class="nbia">¥499.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/14.jpg" alt="">
+						  			    <div class="caption">
+						  			      <h3>FIIL 智能蓝牙无线降噪耳机</h3>
+						  			      <p>手势触控、智能启停</p>
+						  			      <p class="nbia">¥999.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/15.png" alt="">
+						  			    <div class="caption">
+						  			      <h3>声波电动牙刷</h3>
+						  			      <p>锤子科技荣誉五周年纪念版</p>
+						  			      <p class="nbia">¥598.00</p>
+						  			      <p class="goumai"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+						  			<div class="col-xs-6 col-sm-6 col-md-3 kuang" style="padding: 0px;">
+						  			  <div class="tow thumbnail">
+						  			    <img src="./public/img/sp/16.jpg" alt="">
+						  			    <div class="caption">
+						  			      <h3>《深泽直人》</h3>
+						  			      <p>首次面向中国读者介绍其作品</p>
+						  			      <p class="nbia">¥199.00</p>
+						  			      <p class="goumai btn-xs"><a href="#" class="btn btn-primary btn-xs" role="button">购买</a> <a href="#" class="btn btn-default btn-xs" role="button">加入购物车</a></p>
+						  			    </div>
+						  			  </div>
+						  			</div>
+
+
+
+
+						  		</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 售后 -->
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<div class="row">
+					<div class="panel panel-default">
+					  <div class="panel-body">
+							<div class="col-md-3 col-xs-6 zxkf" >
+								<div class="kefu"></div>
+								<h5>在线客服</h5>
+								<h6>周一至周日 9:00-18:00</h6>
+							</div>
+							<div class="col-md-3 col-xs-6 zxkf" >
+								<div class="wuliyou"></div>
+								<h5>七天无理由退货</h5>
+								<h6>七天无理由退货 请放心购买</h6>
+							</div>
+							<div class="col-md-3 col-xs-6 zxkf" >
+								<div class="mianfei"></div>
+								<h5>15天免费换货</h5>
+								<h6>15天内如遇质量问题 免费换货</h6>
+							</div>
+							<div class="col-md-3 col-xs-6 zxkf" >
+								<div class="myf"></div>
+								<h5>满150元免运费</h5>
+								<h6>全场使用顺丰快递</h6>
+							</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- 主体结束 -->
+	</div>
+
+	<hr>
+	<!-- 尾部开始 -->
+	<footer class="footer ">
+	    <div class="container-fluid" style="background: #FAFAFA">
+	      <div class="row">
+			<div class="col-xs-10 col-xs-offset-1" style="margin-top:40px;">
+				    <div class="row footer-top">
+				      <div class="col-xs-12 col-sm-9 col-md-9 col-md-offset-0">
+				        <div class="weizi row about ">
+				          <div class="col-xs-4 col-sm-3 col-md-2" >
+				            <h3>订单服务</h3>
+				            <ul class="list-unstyled">
+				              <li><a href="/about/">购买指南</a></li>
+				              <li><a href="/ad/">支付方式</a></li>
+				              <li><a href="/links/">送货政策</a></li>
+				            </ul>
+				          </div>
+				          <div class="col-xs-4 col-sm-3 col-md-2">
+				            <h3>服务支持</h3>
+				            <ul class="list-unstyled">
+				              <li><a href="#" target="_blank">维修门店</a></li>
+				              <li><a href="#">零售门店</a></li>
+				            </ul>
+				          </div>
+				          <div class="col-xs-4 col-sm-3 col-md-2">
+				            <h3>自助服务</h3>
+				            <ul class="list-unstyled">
+				              <li><a href="#" target="_blank">热点咨询</a></li>
+				              <li><a href="" target="_blank">预约购买</a></li>
+				              <li><a href="" target="_blank">订单物流</a></li>
+				            </ul>
+				          </div>
+				          <div class="col-xs-4 col-sm-3 col-md-2">
+				            <h3>媒体中心</h3>
+				            <ul class="list-unstyled">
+				              <li><a href="" target="_blank">新闻动态</a></li>
+				              <li><a href="" target="_blank">官方视频</a></li>
+				              <li><a href="" target="_blank">图片资源</a></li>
+				            </ul>
+				          </div>
+				          <div class="col-xs-4 col-sm-3 col-md-2">
+				            <h3>关于公司</h3>
+				            <ul class="list-unstyled">
+				              <li><a href="" target="_blank">公司简介</a></li>
+				              <li><a href="" target="_blank">加入我们</a></li>
+				              <li><a href="" target="_blank">联系我们</a></li>
+				            </ul>
+				          </div>
+				          <div class="col-xs-4 col-sm-3 col-md-2">
+				            <h3>关注我们</h3>
+				            <ul class="list-unstyled">
+				              <li><a href="" target="_blank">新浪微博</a></li>
+				              <li><a href="" target="_blank">官方微信</a></li>
+				              <li><a href="" target="_blank">贴吧论坛</a></li>
+				            </ul>
+				          </div>
+				        </div>
+				      </div>
+				      <div class="col-xs-8 col-sm-3 col-md-3 col-md-offset-0">
+				      	<div class="row">
+				      		<div class="col-xs-12 col-md-10">
+								<ul class="list-unstyled">
+							        <li><a href="" target="_blank" class="dianhua">400-619-0909</a></li>
+							        <li><a href="" class="shijian">周一至周日 9:00-18:00 (仅售市话费)</a></li>
+							        <li>
+										<button type="button" class="zxbz btn btn-default ">在线帮助</button>
+							        </li>
+					       	 	</ul>	
+				      		</div>
+							
+					  	</div>
+				      	
+				      </div>
+				    </div>
+
+				    <hr>
+				    <div class="row footer-bottom">
+				    	<div class="col-md-10">
+					      <ul class="list-inline ">
+						    <li>
+						         <a href="#" target="_blank" class="copy">Copyright © 2017, Smartisan Digital Co., Ltd. All Rights Reserved.北京锤子数码科技有限公司
+						          </a>
+					        </li>
+					        <li class="dibu">
+					        	<a href="">法律声明</a>
+					        </li>
+					        <li class="dibu">
+					        	<a href="">隐私条款</a>
+					        </li>
+					        <li class="dibu">
+					        	<a href="">开发者中心</a>
+					        </li>
+					     </ul>
+					     <li class="xia"> 京ICP备14041720号-1&nbsp;京ICP证140622号 &nbsp;京公网安备11010502025474 </li>
+		    			</div>
+		    			<div class="col-md-2">
+      						<div class="dropup">
+      						  <button class="btn btn-default dropdown-toggle " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      						   	<div class="guoqi"></div>
+      						   	<div class="ying">&nbsp;&nbsp;中文&nbsp;&nbsp;</div>
+      						    <span class="caret"></span>
+      						  </button>
+      						  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+      						    <li>
+      						    	<div class="meiguo"></div>
+      									<div class="zw">&nbsp;&nbsp;English&nbsp;&nbsp;</div>
+      						    </li>
+      						  </ul>
+      						</div>
+      	    			</div>
+      			      
+				    </div>
+      	    			
+				    </div>
+				  </div>
+			</div>
+		</div>
+	<!-- 尾部结束 -->
+	</footer>
+
+	<script>
+	//鼠标移入事件
+		$('.kuang').mouseover(function(){
+			$(this).find('.goumai').css({display:'block'});
+			$(this).find('.nbia').css({display:'none'});
+		})
+	//鼠标移除时间
+		$('.kuang').mouseout(function(){
+			$(this).find('.goumai').css({display:'none'});
+			$(this).find('.nbia').css({display:'block'});
+		})
+
+	</script>
+	
+</body>
+</html>
